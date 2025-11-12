@@ -1,15 +1,21 @@
 #ifndef VISITOR_H
 #define VISITOR_H
-
-#include <string>
 using namespace std;
 
-//define visitor class here
-
-
-
-
-
-
-
+class Visitor{
+    private:
+    string visitorName;
+    int ticketsBought;
+    
+    public:
+    Visitor();
+    Visitor(string vn , int tickets);
+    ~Visitor();
+    void displayInfo();
+    string getvisitorName();
+    void setvisitorName(string name);
+    int ticketsBought();
+    void setticketsBought(int tickets);
+    
+};
 #endif
